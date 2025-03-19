@@ -105,5 +105,6 @@ Release date: 14-Feb-2025
 [7]: https://twitter.com/massgravel
 
 ---
+<img width="1440" alt="Screenshot 2025-03-19 at 10 49 17" src="https://github.com/user-attachments/assets/b87c7103-7d5f-4491-a11b-b67e50a74d85" />
 
 <p align="center">Made with Love ❤️</p>
