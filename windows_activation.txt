@@ -1,0 +1,77 @@
+@echo off
+echo.
+echo =========================================================
+echo =============== JesseJesse.xyz Windows Tool =============
+echo =========================================================
+echo.
+echo      __________________________
+echo     | .----------------------. |
+echo     | |  JesseJesse.xyz       | |
+echo     | |  Windows Activator    | |
+echo     | |______________________| |
+echo     |    _______    _______    |
+echo     |   |       |  |       |   |
+echo     |   |_______|  |_______|   |
+echo     |__________________________|
+echo          //                \\
+echo         //                  \\
+echo        //    Activating      \\
+echo       //      Windows...      \\
+echo      //________________________\\
+echo.
+
+:: Prompt the user to open the key page
+set /p openPage="Would you like to open the page with product keys? (Y/N): "
+if /i "%openPage%"=="Y" (
+    start "" "https://pub-c1de1cb456e74d6bbbee111ba9e6c757.r2.dev/windows_activation_keys.html"
+    timeout /t 5 /nobreak > nul
+)
+
+:: Prompt the user for the product key
+set /p productKey="Please enter your Windows product key: "
+
+:: Validate the product key input
+if "%productKey%"=="" (
+    echo  A product key is required to activate windows....
+    pause
+    exit /b
+)
+
+:: Set the product key
+echo Setting the product key for activation with mircosoft bots....
+slmgr.vbs /ipk %productKey%
+if errorlevel 1 (
+    echo Failed to set the product key. Please check the key and try again.
+    pause
+    exit /b
+)
+timeout /t 2 /nobreak > nul
+
+:: Set the KMS server
+echo Configuring a few things on the server...
+slmgr /skms kms8.msguides.com
+if errorlevel 1 (
+    echo Failed to configure the KMS server.
+    pause
+    exit /b
+)
+timeout /t 2 /nobreak > nul
+
+:: Activate Windows
+echo Activating Windows...
+slmgr /ato
+if errorlevel 1 (
+    echo Activation failed. Please check your KMS configuration.
+    pause
+    exit /b
+)
+timeout /t 2 /nobreak > nul
+
+echo =========================================================
+echo ============ Activation Process Completed ===============
+echo =========================================================
+pause
+
+
+
+
