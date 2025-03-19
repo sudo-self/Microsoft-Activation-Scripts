@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windows Activator</title>
+    
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="favicon.ico">
+
+
+    <link rel="apple-touch-icon" sizes="any" href="apple-touch-icon.png">
+    <link rel="icon" sizes="32x32" href="favicon.png" >
+
+
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="icon192.png">
+
+
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" sizes="192x192" href="icon192.png">
+                
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <header class="bg-blue-800 text-white py-4 px-6">
+      <h1 class="text-3xl font-semibold">Windows Activator</h1>
+      <p>Scan to download the activation script</p>
+    </header>
+
+    <div class="mt-2 ml-4">
+      <img
+        src="https://api.qrserver.com/v1/create-qr-code/?data=https://pub-c1de1cb456e74d6bbbee111ba9e6c757.r2.dev/script.bat&size=120x120"
+        alt="QR Code to download script"
+        class="w-24 h-24"
+      />
+    </div>
+
+    <main id="content" class="max-w-screen-md mx-auto py-4 px-6">
+      <h2 id="getting-started" class="text-2xl font-bold text-gray-800 mb-4">
+         Microsoft Product Keys
+          <a
+            href=" https://pub-c1de1cb456e74d6bbbee111ba9e6c757.r2.dev/windows_activation_keys.html"
+            download="script.bat"
+            class="text-blue-600 underline"
+          >
+            <strong>here.</strong></a>&nbsp;Copy the correct key that matches the windows version your activating (example: Windows 10 Pro).
+          <br />
+          </h2>
+      <p class="mb-4">
+        First, open CMD (Command Prompt) as Administrator using:
+      </p>
+      <p class="mb-4">
+        <kbd class="bg-gray-200 p-2 rounded">
+          <img
+            src="http://i.stack.imgur.com/B8Zit.png"
+            width="11"
+            class="inline-block"
+          />
+          + <kbd class="bg-gray-200 p-2 rounded">R</kbd>
+        </kbd>
+      </p>
+      <p class="mb-4">
+        Then type
+        <code class="bg-gray-800 text-white px-2 py-1 rounded">cmd.exe</code>
+        and press Enter.
+      </p>
+      <p class="mb-4">Run these commands one at a time:</p>
+
+      <div class="mb-4 space-y-2">
+        <div class="relative">
+          <code class="block bg-gray-800 text-white px-4 py-2 rounded w-full"
+            >slmgr /ipk -your product key here-</code
+          >
+          <button
+            onclick="copyCode(this)"
+            class="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+          >
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="relative">
+          <code class="block bg-gray-800 text-white px-4 py-2 rounded w-full"
+            >slmgr /skms kms8.msguides.com</code
+          >
+          <button
+            onclick="copyCode(this)"
+            class="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+          >
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="relative">
+          <code class="block bg-gray-800 text-white px-4 py-2 rounded w-full"
+            >slmgr /ato</code
+          >
+          <button
+            onclick="copyCode(this)"
+            class="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+          >
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+      </div>
+
+      <p class="mb-4">
+        <strong>Note</strong>: After running, click
+        <code class="bg-gray-800 text-white px-2 py-1 rounded">OK</code>.
+      </p>
+      <p>
+        You can download the auto activation script .bat
+        <a
+          href=" https://pub-c1de1cb456e74d6bbbee111ba9e6c757.r2.dev/script.bat"
+          download="script.bat"
+          class="text-blue-600 underline"
+        >
+          <strong>here.</strong></a>&nbsp;or the activate executable .exe
+        <a
+          href="/activator.bat.exe"
+          download="script.bat"
+          class="text-blue-600 underline"
+        >
+          <strong>here.</strong>
+        </a>
+      <p class="mb-4 mt-4">
+        Also you can use a tool such as
+        <code class="bg-gray-800 text-white px-4 py-2 rounded">curl</code>&nbsp;or scan the QR at the top of the page with any camera.
+        command:
+      </p>
+      <div class="relative">
+        <pre
+          class="bg-gray-800 text-white p-4 rounded"
+        ><code class="w-full">curl -o script.bat https://pub-c1de1cb456e74d6bbbee111ba9e6c757.r2.dev/script.bat</code></pre>
+        <button
+          onclick="copyCode(this)"
+          class="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+        >
+          <i class="fa-solid fa-copy"></i>
+        </button>
+      </div>
+    </main>
+
+    <script>
+      function copyCode(button) {
+        const code = button.previousElementSibling;
+        navigator.clipboard.writeText(code.textContent).then(() => {
+          alert("Copied to clipboard!");
+        });
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
